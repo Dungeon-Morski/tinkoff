@@ -10,7 +10,7 @@
                     <div class="withdraw_block">
                         <form action="" method="" class="">
 
-                            <div class="flex flex-col gap-[15px]">
+                            <div class="flex flex-col gap-[15px] ">
                                 <div>
                                     <select name="" id="">
                                         <option>Выберите способ</option>
@@ -26,7 +26,7 @@
 
                                 <div class="flex flex-col gap-[5px]">
                                     <p>Сумма:</p>
-                                    <input type="text" id="invoice_number" placeholder="Введите номер счёта">
+                                    <input type="text" id="invoice_number" placeholder="От 100$ до 100000$">
                                 </div>
                                 <button type="submit">Вывести средства</button>
                             </div>

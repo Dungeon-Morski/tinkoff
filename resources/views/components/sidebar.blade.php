@@ -1,5 +1,5 @@
 <div class="sidebar">
-    <div class="flex flex-col gap-[5px]">
+    <div class="sidebar_items flex flex-col sm:gap-4">
 
         <a href="{{route('invoice')}}" class="
         sidebar_item flex items-center
@@ -13,6 +13,7 @@
                 </svg>
             </div>
             <p>Мой счет</p>
+            <p class="mobile">Счет</p>
         </a>
 
         <a href="{{route('refill-balance')}}" class="
@@ -39,6 +40,7 @@
 
             </div>
             <p>Пополнить баланс</p>
+            <p class="mobile">Пополнить</p>
         </a>
 
         <a href="{{route('withdraw-balance')}}" class="
@@ -57,6 +59,7 @@
                 </svg>
             </div>
             <p>Вывод средств</p>
+            <p class="mobile">Вывод</p>
         </a>
 
         <a href="{{route('quotes')}}" class="
@@ -79,6 +82,7 @@
                 </svg>
             </div>
             <p>Котировки</p>
+            <p class="mobile">Котировки</p>
         </a>
 
         <a href="{{route('settings')}}" class="
@@ -94,6 +98,7 @@
                 </svg>
             </div>
             <p>Настройки</p>
+            <p class="mobile">Настройки</p>
         </a>
 
         <a href="{{route('support')}}" class="
@@ -109,10 +114,11 @@
                 </svg>
             </div>
             <p>Поддержка</p>
+            <p class="mobile">Поддержка</p>
         </a>
 
         <a href="{{route('register')}}" class="
-        sidebar_item flex gap-2 items-center
+        sidebar_item flex  items-center
 
         ">
             <div class="circle">
@@ -124,6 +130,22 @@
                 </svg>
             </div>
             <p>Выйти из аккаунта</p>
+            <p class="mobile">Выйти</p>
+
+        </a>
+
+
+        <a href="{{route('support')}}" class="
+        sidebar_item flex md:hidden items-center more
+        <?php echo (Request::segment(2) == 'support') ? 'active' : ''; ?>
+        ">
+            <div class="circle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 18 18" fill="none">
+                    <path d="M3.75 7.5C2.925 7.5 2.25 8.175 2.25 9C2.25 9.825 2.925 10.5 3.75 10.5C4.575 10.5 5.25 9.825 5.25 9C5.25 8.175 4.575 7.5 3.75 7.5ZM14.25 7.5C13.425 7.5 12.75 8.175 12.75 9C12.75 9.825 13.425 10.5 14.25 10.5C15.075 10.5 15.75 9.825 15.75 9C15.75 8.175 15.075 7.5 14.25 7.5ZM9 7.5C8.175 7.5 7.5 8.175 7.5 9C7.5 9.825 8.175 10.5 9 10.5C9.825 10.5 10.5 9.825 10.5 9C10.5 8.175 9.825 7.5 9 7.5Z" fill="#2A2A2A"/>
+                </svg>
+            </div>
+            <p>Еще</p>
+            <p class="mobile">Еще</p>
         </a>
 
     </div>

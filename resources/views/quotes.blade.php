@@ -11,7 +11,7 @@
                         <h2>Индексы</h2>
 
                         <!-- TradingView Widget BEGIN -->
-                        <div class="tradingview-widget-container">
+                        <div class="tradingview-widget-container mt-4">
                             <div class="tradingview-widget-container__widget"></div>
                             <div class="tradingview-widget-copyright"><a href="https://ru.tradingview.com/"
                                                                          rel="noopener nofollow" target="_blank"><span
