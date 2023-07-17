@@ -25,7 +25,10 @@
                         </div>
                         <div class="flex items-center justify-center gap-4">
                             <button class="ref_balance_btn">Пополнить баланс</button>
-                            <button class="support_btn block sm:hidden">Поддержка</button>
+                            <button class="support_btn block sm:hidden">
+                                <span>Поддержка</span>
+                                <img src="{{asset('sources/icons/support-icon.svg')}}" alt="support-icon">
+                            </button>
                         </div>
                     </div>
                     <div class="stats">

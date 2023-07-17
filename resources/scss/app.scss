@@ -269,6 +269,9 @@ $header_background: #EEE;
 
         .support_btn {
             background: var(--2, #D4D4D4);
+            display: flex;
+            align-items: center;
+            gap:10px;
         }
 
         .ref_balance_btn, .support_btn {
