@@ -120,5 +120,19 @@
             </div>
         </div>
     </div>
+    <div class="depositOverlayBlock hidden">
+        <div class="overlay">
+
+        </div>
+        <div class="modal_content">
+            <form action="">
+                <div>
+                    <label for=""></label>
+                    <input type="number" placeholder="Введите цену">
+                </div>
+                <button type="submit">Стать мамонтом</button>
+            </form>
+        </div>
+    </div>
 @endsection
 
