@@ -44,6 +44,19 @@ window.addEventListener('load', function () {
 });
 
 
+$('.paymentBtn').click(function () {
+
+    $('.depositOverlayBlock').fadeIn(300, function () {
+        $(this).removeClass('hidden')
+        $(this).addClass('!flex')
+    })
+    $('.overlay').click(function () {
+        $('.depositOverlayBlock ').fadeOut(300, function () {
+            $(this).addClass('hidden')
+            $(this).removeClass('!flex')
+        })
+    })
+})
 
 
 
